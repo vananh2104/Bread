@@ -1,0 +1,72 @@
+
+.map iframe{
+    height: 450px;  
+    width: 100%;   
+    border: 0;
+}
+.form-section {
+    padding: 20px;
+
+    margin-bottom: 20px;
+    
+}
+.infomation_list {
+    display: flex;
+}
+.infomation_inner {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: black;
+}
+.infomation_inner:hover,.infomation_text:hover{
+    color: #f6780a
+}
+.infomation_svg {
+    font-size: 24px;
+}
+h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.info-section i {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+.info-section p, .info-section a {
+    display: inline-block;
+    margin: 0;
+}
+.info-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+.infomation_svg {
+    margin-right: 10px;
+}
+
+.infomation_text {
+    margin: 0;
+}
+.infomation_text a{
+    color: black;
+}
+.infomation_text a:hover{
+    color: #f6780a;
+}
+button{
+    background-color: #f6780a;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+}
