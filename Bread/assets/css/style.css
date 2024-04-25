@@ -95,7 +95,7 @@
   position: absolute;
   bottom: -80px;
   left: -96px;
-  background-image: url(../images/nen.png);
+  background-image: url(../images/home/nen.png);
   width: 100%;
   height:100%;
   z-index: -1;
@@ -106,10 +106,10 @@
   margin: 20px 0;
   color: #fff;
   text-align: center;
-  background: #464646;
+
 }
 .menu{
-  background-image: url(../images/nen2.jpg);
+  background-image: url(../images/home/nen2.jpg);
   background-size: cover; 
   background-repeat: no-repeat; 
   background-position: center; 
@@ -119,9 +119,11 @@
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch; 
   margin-top: 20px;
+  position: relative;
+
 }
-.menu .owl-menu::before{
-  position: absolute;
+.menu::after{
+   position: absolute;
   content: "";
   background: #000;
   opacity: 0.5;
@@ -131,6 +133,17 @@
   bottom: 0;
   z-index: -1;
 }
+/* .menu .owl-menu::before{
+  position: absolute;
+  content: "";
+  background: #000;
+  opacity: 0.5;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+} */
 
 .menu .owl-menu {
   margin-top: 50px;
@@ -195,25 +208,24 @@
 .menu-items .owl-menu .owl-dots .owl-dot.active {
   background-color: orange;
 }
-.menu-items .owl-menu .button {
-  color: #000;
-  border: 1px solid #000 !important;
-  text-decoration: none;
-  display: block !important;
-  padding: 10px 0;
+.add-to-cart {
+  background: linear-gradient(135deg, transparent 50%, orange 50%);
+  background-size: 200% 200%;
+  background-position: top left;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: color 0.5s, background-position 0.5s;
   position: relative;
   overflow: hidden;
 }
-.menu-items .owl-menu .button:hover {
-  background-color: #F6780A;
-  color: #ffffff;
+
+.add-to-cart:hover {
+  color: white;
+  background-position: bottom right;
 }
-.menu-items .owl-menu .button span {
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
-  font-weight: 500;
-}
+
 /* đánh giá*/
 .product-img {
   max-width: 100%;
@@ -314,7 +326,7 @@ color: rgb(90, 89, 89);
 } 
 /*footer*/
 .footer {
-  background-image: url(../images/footer.jpeg);
+  background-image: url(../images/home/footer.jpeg);
   background-size: 100% 100%;
   color:#FCF8F0;
   text-align: center;
