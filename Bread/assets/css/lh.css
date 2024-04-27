@@ -60,7 +60,7 @@ h3{
 .infomation_text a:hover{
     color: #f6780a;
 }
-button{
+.contact {
     background-color: #f6780a;
     color: white;
     padding: 12px 40px;
@@ -145,7 +145,7 @@ button{
 }
 /* buns*/
 .product-list {
-    margin-top: -100px;
+    margin-top: -70px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -164,8 +164,7 @@ button{
 }
 
 .cell:hover .product-img {
-    transform: scale(1.1);
-    /* Phóng to hình ảnh khi hover */
+    transform: scale(1.1);   /* Phóng to hình ảnh khi hover */
 }
 
 .product-name {
@@ -179,9 +178,7 @@ button{
     font-weight: bold;
     margin-bottom: 5px;
 }
-
-/* Hiệu ứng hover cho nút */
-.add-to-cart {
+.add-to-cart {/* Hiệu ứng hover cho nút */
     background: linear-gradient(135deg, transparent 50%, orange 50%);
     background-size: 200% 200%;
     background-position: top left;
@@ -197,4 +194,108 @@ button{
 .add-to-cart:hover {
     color: white;
     background-position: bottom right;
+}
+/* trang chi tiết buns */
+img {
+    width: 150%;
+    height: auto;
+}
+.detail {
+    padding-top: 80px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    margin-top: 210px;
+    background-color: gray;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: darkgray;
+}
+.product-title {
+    color: black;
+    font-weight: bold;
+}
+.price {
+    font-size: 20px;
+    color: red;
+}
+.product-description {
+    font-size: 16px;
+}
+.add .decrease-btn,
+.increase-btn {
+    background-color: aliceblue;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    height: 40px;
+}
+.add input {
+    width: 60px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;  /* Căn giữa nội dung trong ô */
+}
+
+.add .add-to-cart-btn {
+    width: 190px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: #CD9B33;
+    color: white;
+    vertical-align: middle;
+}
+
+.add .add-to-cart-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.add button:last-child {
+    margin-left: 20px;
+}
+.sharing{/*  phần chia sẻ */
+    margin-top: 30px;
+}
+.sharing-title {
+    font-size: 20px;
+    color: rgb(235, 186, 255);
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/* CSS cho từng biểu tượng chia sẻ */
+.social-icons li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    background: #ffffff;
+    border: 1px solid #8a8a8a;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+.social-icons li:last-child {
+    margin-right: 0;
+}
+.social-icons a {
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+
+}
+.icon i {
+    display: block;
 }
