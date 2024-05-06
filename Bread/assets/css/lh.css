@@ -1,44 +1,54 @@
-
-.map iframe{
-    height: 450px;  
-    width: 100%;   
+.map iframe {
+    height: 450px;
+    width: 100%;
     border: 0;
 }
+
 .form-section {
     padding: 20px;
 
     margin-bottom: 20px;
-    
+
 }
+
 .infomation_list {
     display: flex;
 }
+
 .infomation_inner {
     display: flex;
     align-items: center;
     margin-right: 20px;
     color: black;
 }
-.infomation_inner:hover,.infomation_text:hover{
+
+.infomation_inner:hover,
+.infomation_text:hover {
     color: #f6780a
 }
+
 .infomation_svg {
     font-size: 24px;
 }
-h3{
+
+h3 {
     font-size: 20px;
     font-weight: bold;
 }
+
 .info-section i {
     display: inline-block;
     width: 20px;
     text-align: center;
     margin-right: 10px;
 }
-.info-section p, .info-section a {
+
+.info-section p,
+.info-section a {
     display: inline-block;
     margin: 0;
 }
+
 .info-section {
     display: flex;
     align-items: center;
@@ -54,12 +64,15 @@ h3{
 .infomation_text {
     margin: 0;
 }
-.infomation_text a{
+
+.infomation_text a {
     color: black;
 }
-.infomation_text a:hover{
+
+.infomation_text a:hover {
     color: #f6780a;
 }
+
 .contact {
     background-color: #f6780a;
     color: white;
@@ -70,16 +83,19 @@ h3{
     cursor: pointer;
     border-radius: 30px;
 }
+
 /* trang video*/
-    .description{
-        font-size: 12px;
-        color: rgb(98, 98, 98);
-    }
-    .video-container {
-      margin-bottom: 20px; 
-    }
+.description {
+    font-size: 12px;
+    color: rgb(98, 98, 98);
+}
+
+.video-container {
+    margin-bottom: 20px;
+}
+
 /*TRANG tin tức*/
-   .item {
+.item {
     border: 1px solid #ccc;
     border-radius: 15px;
     margin-bottom: 20px;
@@ -100,6 +116,7 @@ h3{
     max-width: 100%;
     height: 300px;
 }
+
 @media only screen and (min-width: 640px) {
     .posts_list .cell {
         width: calc(100% / 3);
@@ -107,28 +124,35 @@ h3{
         box-sizing: border-box;
     }
 }
+
 .posts_list .cell {
     padding: 10px;
 }
+
 .posts_list .grid-x {
     margin-right: 0;
     margin-left: 0;
 }
+
 .cover-content {
     overflow-y: auto;
 }
+
 .posts_list .cell {
     height: 100%;
 }
-.cover-content h5 a{
+
+.cover-content h5 a {
     text-decoration: none;
     color: black;
-   font-weight: 600;
+    font-weight: 600;
     font-size: 17px;
     line-height: 25px;
-    text-transform: uppercase;;
-    
+    text-transform: uppercase;
+    ;
+
 }
+
 /*  mô tả không bị tràn */
 .cover-content p {
     color: rgb(83, 83, 83);
@@ -139,15 +163,19 @@ h3{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 /* Kéo dài icon xem chi tiết xuống dưới cùng */
 .view-more {
     margin-top: auto;
 }
+
 /* buns*/
+/* Define base styles */
+
 .product-list {
     margin-top: -50px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns based on screen size */
     gap: 10px;
 }
 
@@ -164,7 +192,7 @@ h3{
 }
 
 .cell:hover .product-img {
-    transform: scale(1.1);   /* Phóng to hình ảnh khi hover */
+    transform: scale(1.1);
 }
 
 .product-name {
@@ -178,7 +206,8 @@ h3{
     font-weight: bold;
     margin-bottom: 5px;
 }
-.add-to-cart {/* Hiệu ứng hover cho nút */
+
+.add-to-cart {
     background: linear-gradient(135deg, transparent 50%, orange 50%);
     background-size: 200% 200%;
     background-position: top left;
@@ -195,14 +224,41 @@ h3{
     color: white;
     background-position: bottom right;
 }
+/* responsive */
+
+@media (min-width: 768px) {
+    .product-list {
+        grid-template-columns: repeat(3, 1fr); /*   cột trên các thiết bị trung bình */
+    }
+}
+
+@media (min-width: 992px) {
+    .product-list {
+        grid-template-columns: repeat(4, 1fr); /*  4 cột trên các thiết bị lớn */
+    }
+}
+
+@media (min-width: 1200px) {
+    .product-list {
+        grid-template-columns: repeat(5, 1fr); /* 5 cột trên các thiết bị cực lớn */
+    }
+}
+
 /* trang chi tiết buns */
+.product-name a {
+    color: black;
+    text-decoration: none;
+}
+
+.product-name a:hover {
+    color: rgb(199, 38, 38);
+}
+
 img {
     width: 150%;
     height: auto;
 }
-.detail {
-    padding-top: 80px;
-}
+
 .carousel-control-prev,
 .carousel-control-next {
     margin-top: 210px;
@@ -213,21 +269,26 @@ img {
     line-height: 40px;
     font-size: 20px;
 }
+
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
     background-color: darkgray;
 }
+
 .product-title {
     color: black;
     font-weight: bold;
 }
+
 .price {
     font-size: 20px;
     color: red;
 }
+
 .product-description {
     font-size: 16px;
 }
+
 .add .decrease-btn,
 .increase-btn {
     background-color: aliceblue;
@@ -237,12 +298,14 @@ img {
     border: 1px solid rgb(0, 0, 0);
     height: 40px;
 }
+
 .add input {
     width: 60px;
     height: 40px;
     border: 1px solid black;
     text-align: center;
-    vertical-align: middle;  /* Căn giữa nội dung trong ô */
+    vertical-align: middle;
+    /* Căn giữa nội dung trong ô */
 }
 
 .add .add-to-cart-btn {
@@ -262,9 +325,12 @@ img {
 .add button:last-child {
     margin-left: 20px;
 }
-.sharing{/*  phần chia sẻ */
+
+.sharing {
+    /*  phần chia sẻ */
     margin-top: 30px;
 }
+
 .sharing-title {
     font-size: 20px;
     color: rgb(235, 186, 255);
@@ -275,6 +341,7 @@ img {
     padding: 0;
     margin: 0;
 }
+
 /* CSS cho từng biểu tượng chia sẻ */
 .social-icons li {
     display: inline-flex;
@@ -287,15 +354,88 @@ img {
     height: 36px;
     border-radius: 50%;
 }
+
 .social-icons li:last-child {
     margin-right: 0;
 }
+
 .social-icons a {
     text-decoration: none;
     color: gray;
     font-size: 20px;
 
 }
+
 .icon i {
     display: block;
+}
+
+/*trang chi tiết tin tức*/
+.news {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-detail {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: 900px;
+}
+
+.img-sugar,
+.img-cake {
+    width: 70%;
+    height: auto;
+    margin-left: 70px;
+}
+
+.share-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 78px;
+    padding-right: 15px;
+    position: sticky;
+    top: 220px;
+}
+
+.share-box .share-title {
+    align-items: center;
+    bottom: 35px;
+    color: black;
+    display: flex;
+    font-size: 20px;
+    font-weight: 200;
+    position: relative;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+}
+
+.share-box .share-title::before {
+    background: #000000;
+    content: "";
+    height: 1px;
+    margin-right: 3px;
+    width: 10px;
+}
+
+.share-box .social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.share-box .social-icons .icon {
+    padding: 10px;
+}
+
+.des-detail {
+    font-size: 17px;
+}
+
+.action {
+    font-size: 17px;
+    margin-left: 30px;
 }

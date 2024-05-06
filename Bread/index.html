@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="assets/font-awesome/font-awesome-6-pro/css/all.css">
     <link rel="stylesheet" href="assets/css/carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/carousel/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
-    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+    <!-- Thư viện Animate.css -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
 </head>
@@ -32,7 +32,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Trang chủ </a>
             </li>
@@ -61,9 +61,6 @@
               <a class="nav-link" href="video.html">Video</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="album.html">Album</a>
-            </li>
-            <li class="nav-item active">
               <a class="nav-link" href="lienhe.html">Liên hệ</a>
             </li>
           </ul>
@@ -74,13 +71,16 @@
             <li class="nav-item">
               <a class="nav-icon" href="#"><i class="fas fa-user"></i></a>
             </li>
+            <li class="nav-item">
+              <a class="nav-icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></i></a>
+            </li>
           </ul>
         </div>
       </nav>
     </div>
   </header>
   <!--carousel-->
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="d-block w-100" src="assets/images/home/slide1.png" alt="First slide">
@@ -113,21 +113,22 @@
         <img class="d-block w-100" src="assets/images/home/slide10.jpg" alt="Third slide">
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+      <i class="fa-solid fa-chevron-left icon"></i>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+      <i class="fa-solid fa-chevron-right icon"></i>
       <span class="sr-only">Next</span>
     </a>
   </div>
+
   <!-- -->
   <section class="main">
     <div class="banner">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-sm-6 col-12">
+          <div class="col-md-8 col-sm-6 col-12 wow animate__animated animate__fadeInLeft">
             <h3 class="sub-title">Câu chuyện</h3>
             <h2 class="heading-title">BREADTALK VIETNAM</h2>
             <div class="text">
@@ -139,276 +140,297 @@
               <p>Trải nghiệm ẩm thực bánh tuyệt vời tại thương hiệu bánh mì đến từ Singapore ngay <br>hôm nay!</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 col-12">
+          <div class="col-md-4 col-sm-6 col-12 wow animate__animated animate__fadeInRight">
             <div class="image-container">
               <img src="assets/images/home/1.jpg" alt="" class="w-100 custom-img">
             </div>
           </div>
-
         </div>
       </div>
     </div>
   </section>
+
   <!--danh mục sp -->
-  <section class="menu">
+  <section class="menu wow animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s"
+    data-wow-offset="100">
     <div class="container">
       <div class="title">
         <h3>DANH MỤC SẢN PHẨM</h3>
       </div>
       <div class="owl-menu owl-carousel">
-        <div class="item">
+        <div class="item wow animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
           <a href="buns.html">
             <img src="assets/images/home/buns.png" alt="">
           </a>
           <h5>BUNS</h5>
         </div>
-
-        <div class="item">
-          <a href="">
+        <div class="item wow animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
+          <a href="toast.html">
             <img src="assets/images/home/toasts.png" alt="TOASTS">
           </a>
           <h5>TOASTS</h5>
         </div>
-
-        <div class="item">
-          <a href="">
+        <div class="item wow animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+          <a href="sandwiches.html">
             <img src="assets/images/home/sandw.png" alt="SANDWICHES">
           </a>
           <h5>SANDWICHES</h5>
         </div>
-        <div class="item">
-          <a href="">
+        <div class="item wow animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.6s">
+          <a href="cakes.html">
             <img src="assets/images/home/cake.png" alt="CAKES">
           </a>
           <h5>CAKES</h5>
         </div>
-
-        <div class="item">
-          <a href="">
+        <div class="item wow animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.7s">
+          <a href="cakeslices.html">
             <img src="assets/images/home/slicecake.png" alt="PUDDING">
           </a>
-          <h5>CAKE SLICES</h3>
+          <h5>CAKE SLICES</h5>
         </div>
-        <div class="item">
-          <a href="">
+        <div class="item wow animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
+          <a href="drinks.html">
             <img src="assets/images/home/drink.png" alt="DRINKS">
           </a>
-          <h5>DRINKS</h3>
+          <h5>DRINKS</h5>
         </div>
-
-        <div class="item">
-          <a href="">
+        <div class="item wow animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.9s">
+          <a href="pudding.html">
             <img src="assets/images/home/pudding.png" alt="PUDDING">
           </a>
-          <h5>PUDDING</h3>
+          <h5>PUDDING</h5>
         </div>
+      </div>
+      <div class="view-all-all">
+        <a href="sanpham.html">Xem tất cả</a>
       </div>
     </div>
   </section>
   <!--sp nổi bật-->
-  <section class="menu-items">
+  <section class="menu-items  wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s"
+    data-wow-offset="100">
     <div class="container">
       <div class="sub-title">
         <h3>SẢN PHẨM NỔI BẬT</h3>
       </div>
+      <div class="bread-title">
+        <p>BREAD TALK</p>
+      </div>
       <div class="owl-menu owl-carousel">
-        <div class="item-pro">
+        <div class="item-pro wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
           <a href="">
-            <img src="assets/images/home/1.png" alt="">
+            <img src="assets/images/cakes/5.png" alt="">
           </a>
-          <H6>TIRAMISU C</H6>
-          <P>550,000 đ</P>
-          <button class="add-to-cart">Thêm vào giỏ hàng</button>
-        </div>
-        <div class="item-pro">
-          <a href="">
-            <img src="assets/images/home/2.png" alt="TOASTS">
-          </a>
-          <H6>TIRAMISU R</H6>
-          <P>390,000 đ</P>
-          <button class="add-to-cart">Thêm vào giỏ hàng</button>
-        </div>
-
-        <div class="item-pro">
-          <a href="">
-            <img src="assets/images/home/3.png" alt="SANDWICHES">
-          </a>
-          <H6>PASSION CHEESE R</H6>
+           <H6><a href="ctsp.html">HAI! CHEESE R</a></H6>
           <P>360,000 đ</P>
           <button class="add-to-cart">Thêm vào giỏ hàng</button>
         </div>
-        <div class="item-pro">
+        <div class="item-pro wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
           <a href="">
-            <img src="assets/images/home/4.png" alt="DRY CAKES">
+            <img src="assets/images/cakes/7.png" alt="TOASTS">
           </a>
-          <H6>PASSION CHEESE C</H6>
+           <H6><a href="ctsp.html">MACHA MACHA</a></H6>
           <P>490,000 đ</P>
           <button class="add-to-cart">Thêm vào giỏ hàng</button>
         </div>
 
-        <div class="item-pro">
+        <div class="item-pro wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
           <a href="">
-            <img src="assets/images/home/5.png" alt="CAKES">
+            <img src="assets/images/cakes/8.png" alt="SANDWICHES">
           </a>
-          <H6>JAPAN LIGHT CHEESE</H6>
-          <P>129,000 đ</P>
+           <H6><a href="ctsp.html">MANGOCOCO CAKE</a></H6>
+          <P>420,000 đ</P>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </div>
+        <div class="item-pro wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.6s">
+          <a href="">
+            <img src="assets/images/cakes/9.png" alt="DRY CAKES">
+          </a>
+           <H6><a href="ctsp.html">MOCHA CHEESE</a></H6>
+          <P>490,000 đ</P>
           <button class="add-to-cart">Thêm vào giỏ hàng</button>
         </div>
 
-        <div class="item-pro">
+        <div class="item-pro wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.7s">
           <a href="">
-            <img src="assets/images/home/6.png" alt="PUDDING">
+            <img src="assets/images/buns/1.png" alt="CAKES">
           </a>
-          <H6>SR GREENTEA SLICED</H6>
-          <P>30,000 đ</P>
+           <H6><a href="ctsp.html">BACON CHEESE ONION</a></H6>
+          <P>32,000 đ</P>
           <button class="add-to-cart">Thêm vào giỏ hàng</button>
         </div>
 
-        <div class="item-pro">
+        <div class="item-pro wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.8s">
           <a href="">
-            <img src="assets/images/home/7.png" alt="SEASONAL SPECIALS">
+            <img src="assets/images/sanwiches/2.png" alt="PUDDING">
           </a>
-          <H6>BANANA CAKE</H6>
+           <H6><a href="ctsp.html">BAKED HAM&CHEESE SW</a></H6>
+          <P>45,000 đ</P>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </div>
+
+        <div class="item-pro wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.9s">
+          <a href="">
+            <img src="assets/images/toasts/10.png" alt="SEASONAL SPECIALS">
+          </a>
+           <H6><a href="ctsp.html">MOUNT GREENTEA TOAST</a></H6>
+          <p>55,000 đ</p>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </div>
+
+        <div class="item-pro wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+          <a href="">
+            <img src="assets/images/toasts/1.png" alt="DRINKS">
+          </a>
+           <H6><a href="ctsp.html">ALMOND COFFEE MILKY WAY</a></H6>
           <p>108,000 đ</p>
           <button class="add-to-cart">Thêm vào giỏ hàng</button>
         </div>
 
-        <div class="item-pro">
-          <a href="">
-            <img src="assets/images/home/8.png" alt="DRINKS">
-          </a>
-          <H6>CREAM CHEZ GARLIC BREAD</H6>
-          <p>36,000 đ</p>
-          <button class="add-to-cart">Thêm vào giỏ hàng</button>
-        </div>
-
-        <div class="item-pro">
+        <div class="item-pro wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
           <a href="">
             <img src="assets/images/home/9.png" alt="PUDDING">
           </a>
-          <H6>FIRE FLOSS</H6>
+           <H6><a href="ctsp.html">FIRE FLOSS</a></H6>
           <p>34,000 đ</p>
           <button class="add-to-cart">Thêm vào giỏ hàng</button>
         </div>
-        <div class="item-pro">
+        <div class="item-pro wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
           <a href="">
             <img src="assets/images/home/10.png" alt="PUDDING">
           </a>
-          <H6>CHICKEN PARMESAN</H6>
+           <H6><a href="ctsp.html">CHICKEN PARMESAN</a></H6>
           <p>34,000 đ</p>
           <button class="add-to-cart">Thêm vào giỏ hàng</button>
         </div>
-        <div class="item-pro">
+        <div class="item-pro wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
           <a href="">
-            <img src="assets/images/home/11.png" alt="PUDDING">
+            <img src="assets/images/toasts/3.png" alt="PUDDING">
           </a>
-          <h6>TIRAMISU CUP</h6>
-          <p>59,000 đ</p>
+           <H6><a href="ctsp.html">BRIOCHE</a></h6>
+          <p>90,000 đ</p>
           <button class="add-to-cart">Thêm vào giỏ hàng</button>
         </div>
-        <div class="item-pro">
+        <div class="item-pro wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
           <a href="">
-            <img src="assets/images/home/12.png" alt="PUDDING">
+            <img src="assets/images/sanwiches/1.png" alt="PUDDING">
           </a>
-          <h6>TIRAMISU CUP</h6>
-          <p>59,000 đ</p>
+           <H6><a href="ctsp.html">BACON&EGG BREAKFAST SW</a></h6>
+          <p>45,000 đ</p>
           <button class="add-to-cart">Thêm vào giỏ hàng</button>
         </div>
-        <div class="item-pro">
+        <div class="item-pro wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
           <a href="">
-            <img src="assets/images/home/13.png" alt="PUDDING">
+            <img src="assets/images/cakeslices/4.png" alt="PUDDING">
           </a>
-          <h6>RAINBOW DONUT</h6>
-          <p>28,000 đ</p>
+           <H6><a href="ctsp.html">FRESH CREAM (SN01)</a></h6>
+          <p>390,000 đ</p>
           <button class="add-to-cart">Thêm vào giỏ hàng</button>
         </div>
-        <div class="item-pro">
+        <div class="item-pro wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
           <a href="">
-            <img src="assets/images/home/14.png" alt="PUDDING">
+            <img src="assets/images/cakeslices/11.png" alt="PUDDING">
           </a>
-          <h6>CHOCOLATE DONUT</h6>
-          <p>28,000 đ</p>
+           <H6><a href="ctsp.html">PARTY PINK</a></h6>
+          <p>550,000 đ</p>
           <button class="add-to-cart">Thêm vào giỏ hàng</button>
         </div>
-        <div class="item-pro">
+        <div class="item-pro wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
           <a href="">
-            <img src="assets/images/home/15.png" alt="PUDDING">
+            <img src="assets/images/buns/4.png" alt="PUDDING">
           </a>
-          <h6>TART GOLDEN CHEESE</h6>
-          <p>59,000 đ</p>
+           <H6><a href="ctsp.html">BIG EYE</a></h6>
+          <p>34,000 đ</p>
           <button class="add-to-cart">Thêm vào giỏ hàng</button>
         </div>
-        <div class="item-pro">
+        <div class="item-pro wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
           <a href="">
-            <img src="assets/images/home/16.png" alt="PUDDING">
+            <img src="assets/images/cakeslices/8.png" alt="PUDDING">
           </a>
-          <h6>SUGAR DONUT </h6>
-          <p>28,000 đ</p>
+           <H6><a href="ctsp.html">MANGOCOCO CAKE</a> </h6>
+          <p>420,000 đ</p>
           <button class="add-to-cart">Thêm vào giỏ hàng</button>
         </div>
-        <div class="item-pro">
+        <div class="item-pro wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
           <a href="">
-            <img src="assets/images/home/17.jpg" alt="PUDDING">
+            <img src="assets/images/cakes/11.png" alt="PUDDING">
           </a>
-          <h6>DONUT BALLS</h6>
-          <p>39,000 đ</p>
+           <H6><a href="ctsp.html">PARTY PINK</a></h6>
+          <p>550,000 đ</p>
           <button class="add-to-cart">Thêm vào giỏ hàng</button>
         </div>
+
+      </div>
+      <div class="view-all-a">
+        <a href="sanpham.html">Xem tất cả</a>
       </div>
     </div>
   </section>
+  </style>
   <!--cảm nhận khách hàng-->
-  <div class="feedback">
+  <div class="feedback wow animate__animated animate__fadeIn">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <img src="assets/images/home/chidep.png" alt="Product Image" class="product-img">
         </div>
         <div class="col-md-6">
-          <h2 class="title">CẢM NHẬN KHÁCH HÀNG</h2>
-          <div class="hb_swiper_icon">
+          <h2 class="title wow animate__animated animate__fadeInRight">CẢM NHẬN KHÁCH HÀNG</h2>
+          <div class="hb_swiper_icon wow animate__animated animate__fadeInRight">
             <img src="assets/images/home/icon.png">
           </div>
           <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <p class="cmt">Lâu lâu mấy đứa em lên chơi mà không biết dắt đi đâu là dẫn nó tới tiệm này. Bánh nước giá ok, có chỗ ngồi rộng rãi mà thoải mái nữa.</p>
-                    <img src="assets/images/home/fb3.jpg" class="img-feedback">          <b> BELOVED CUSTOMER</b>
-                </div>
-                <div class="carousel-item">
-                  <p class="cmt">Lâu lâu mấy đứa em lên chơi mà không biết dắt đi đâu là dẫn nó tới tiệm này. Bánh nước giá ok, có chỗ ngồi rộng rãi mà thoải mái nữa.</p>
-                  <img src="assets/images/home/fb4.jpg" class="img-feedback">   <b> BELOVED CUSTOMER</b>
+              <div class="carousel-item active">
+                <p class="cmt wow animate__animated animate__fadeInLeft">Lâu lâu mấy đứa em lên chơi mà không biết dắt
+                  đi đâu là dẫn nó tới tiệm này. Bánh nước
+                  giá ok, có chỗ ngồi rộng rãi mà thoải mái nữa.</p>
+                <img src="assets/images/home/fb3.jpg" class="img-feedback wow animate__animated animate__fadeInLeft"> <b
+                  class="wow animate__animated animate__fadeInLeft"> BELOVED CUSTOMER</b>
               </div>
-                <div class="carousel-item">
-                    <p class="cmt">Thử vì tiệm gần nhà nhưng đình tới giờ. Nhân viên thân thiện, nhiệt tình, bánh ngon. Tiệm mở rất sớm, sáng ghé mua mang đi làm luôn cũng tiện.</p>
-                    <img src="assets/images/home/fb5.jpg" class="img-feedback">  <b> BELOVED CUSTOMER</b>
-                </div>
-                <div class="carousel-item">
-                    <p class="cmt">Ghiền Fire Floss thật sự. Mình không hảo ngọt mấy, nên chưa thử qua bánh ngọt ở đây nhưng mà cái bánh nhân chà bông ở đây phải nói là đỉnh. Mấy loại bánh mặn khác cũng ok, mà siêu recommend cái bánh Fire Floss này nha. Mới đi xem lại, hình như nó còn là Best Seller của tiệm.</p>
-                    <img src="assets/images/home/fb1.jpg" class="img-feedback">   <b> BELOVED CUSTOMER</b>
-                </div>
-                <div class="carousel-item">
-                    <p class="cmt">Cám ơn BreadTalk đã cứu tuiiii. Đợt đó đặt bánh cho công ty mà chỗ đặt đầu tiên xảy ra lỗi, không giao bánh được, cuống cuồng đi kiếm chỗ khác. May có bên này chịu nhận, tui cũng lo quá trời, may người ta ráng tăng ca để xong đơn kịp giao cho tui. Từ đó, tui thành mối đặt bánh ở đây luôn, chỗ lớn người ta làm ăn uy tín, mọi người yên tâm.</p>
-                    <img src="assets/images/home/fb2.jpg" class="img-feedback">  <b> BELOVED CUSTOMER</b>
-                </div>
+              <div class="carousel-item">
+                <p class="cmt">Lâu lâu mấy đứa em lên chơi mà không biết dắt đi đâu là dẫn nó tới tiệm này. Bánh nước
+                  giá ok, có chỗ ngồi rộng rãi mà thoải mái nữa.</p>
+                <img src="assets/images/home/fb4.jpg" class="img-feedback"> <b> BELOVED CUSTOMER</b>
+              </div>
+              <div class="carousel-item">
+                <p class="cmt">Thử vì tiệm gần nhà nhưng đình tới giờ. Nhân viên thân thiện, nhiệt tình, bánh ngon. Tiệm
+                  mở rất sớm, sáng ghé mua mang đi làm luôn cũng tiện.</p>
+                <img src="assets/images/home/fb5.jpg" class="img-feedback"> <b> BELOVED CUSTOMER</b>
+              </div>
+              <div class="carousel-item">
+                <p class="cmt">Ghiền Fire Floss thật sự. Mình không hảo ngọt mấy, nên chưa thử qua bánh ngọt ở đây nhưng
+                  mà cái bánh nhân chà bông ở đây phải nói là đỉnh. Mấy loại bánh mặn khác cũng ok, mà siêu recommend
+                  cái bánh Fire Floss này nha. Mới đi xem lại, hình như nó còn là Best Seller của tiệm.</p>
+                <img src="assets/images/home/fb1.jpg" class="img-feedback"> <b> BELOVED CUSTOMER</b>
+              </div>
+              <div class="carousel-item">
+                <p class="cmt">Cám ơn BreadTalk đã cứu tuiiii. Đợt đó đặt bánh cho công ty mà chỗ đặt đầu tiên xảy ra
+                  lỗi, không giao bánh được, cuống cuồng đi kiếm chỗ khác. May có bên này chịu nhận, tui cũng lo quá
+                  trời, may người ta ráng tăng ca để xong đơn kịp giao cho tui. Từ đó, tui thành mối đặt bánh ở đây
+                  luôn, chỗ lớn người ta làm ăn uy tín, mọi người yên tâm.</p>
+                <img src="assets/images/home/fb2.jpg" class="img-feedback"> <b> BELOVED CUSTOMER</b>
+              </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+              <i class="fa-solid fa-chevron-left icon"></i>
+              <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+              <i class="fa-solid fa-chevron-right icon"></i>
+              <span class="sr-only">Next</span>
             </a>
-        </div>  
+          </div>
         </div>
       </div>
     </div>
   </div>
   <!--video-->
-  <div class="widget_text widget_custom_html">
+  <div class="widget_text widget_custom_html container">
     <div class="textwidget custom-html-widget">
-      <div class="hb_video_languges" data-wow-duration="0.7s" data-wow-delay="0.8s">
+      <div class="hb_video_languges  wow animate__animated animate__zoomIn " data-wow-duration="0.7s"
+        data-wow-delay="0.8s">
+
         <iframe id="hd-iframe" data-embed="https://www.youtube.com/watch?v=H5pqrpqBHqE" frameborder="0"
           allowfullscreen=""
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -419,7 +441,7 @@
     </div>
   </div>
   <!--góc ẩm thực-->
-  <div id="carouselExample" class="carousel-slide" data-ride="carousel">
+  <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
     <div class="sub-title">
       <h2>GÓC ẨM THỰC</h2>
     </div>
@@ -427,54 +449,36 @@
       <p>Làm bánh là nghệ thuật, là cách để thư giãn và tận hưởng cuộc sống. Khám phá <br>những bí mật nho nhỏ cùng
         BreadTalk nhé!</p>
     </div>
-
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 ">
             <div class="content-box">
               <img class="img-fluid" src="assets/images/home/b.jpg" alt="Slide 1">
-              <h5><a href="https://breadtalkvietnam.com/nhung-loai-banh-ngot-noi-tieng-tren-the-gioi/">NHỮNG LOẠI BÁNH
-                  NGỌT NỔI TIẾNG TRÊN THẾ GIỚI</a></h5>
+              <h5><a href="cttintuc2.html">NHỮNG LOẠI BÁNH NGỌT NỔI TIẾNG TRÊN THẾ GIỚI</a></h5>
               <p class="excerpt">Những loại bánh ngọt nổi tiếng trên thế giới. Nếu là một tín đồ của bánh ngọt hay chỉ
                 đơn giản là người ưa khám phá thì chắc chắn...</p>
-              <a class="view-more" href="https://breadtalkvietnam.com/phan-biet-cac-loai-duong-dung-de-lam-banh/"
-                title="Phân biệt các loại đường dùng để làm bánh">
-                <i class="fa-solid fa-angle-right"></i>
-                <span>Xem chi tiết</span>
-              </a>
+              <a href="cttintuc2.html"><i class="fa-solid fa-angle-right"></i> Xem chi tiết</a>
             </div>
           </div>
           <div class="col-md-4">
             <div class="content-box">
               <img class="img-fluid" src="assets/images/home/a.jpg" alt="Slide 1">
-              <h5><a
-                  href="https://breadtalkvietnam.com/1-lat-banh-mi-sandwich-bao-nhieu-calo-giam-can-an-loai-sandwich-nao/">1
-                  LÁT BÁNH MÌ SANDWICH BAO NHIÊU CALO? GIẢM CÂN ĂN LOẠI SANDWICH NÀO?</a></h5>
+              <h5><a href="cttintuc3.html">1 LÁT BÁNH MÌ SANDWICH BAO NHIÊU CALO? GIẢM CÂN ĂN LOẠI SANDWICH NÀO?</a>
+              </h5>
               <p class="excerpt">Bánh mì sandwich là món ăn phổ biến được nhiều người lựa chọn trong bữa ăn sáng. Cùng
                 BreadTalk tìm hiểu 1 lát bánh mì...</p>
-                <a class="view-more"
-                href="https://breadtalkvietnam.com/1-lat-banh-mi-sandwich-bao-nhieu-calo-giam-can-an-loai-sandwich-nao/"
-                title="1 lát bánh mì sandwich bao nhiêu calo? Giảm cân ăn loại sandwich nào?">
-                <i class="fa-solid fa-angle-right"></i>
-                <span>Xem chi tiết</span>
-              </a>
+              <a href="cttintuc3.html"> <i class="fa-solid fa-angle-right"></i> Xem chi tiết </a>
             </div>
           </div>
           <div class="col-md-4">
             <div class="content-box">
               <img class="img-fluid" src="assets/images/home/banh.jpg" alt="Slide 1">
-              <h5><a href="https://breadtalkvietnam.com/tuyet-chieu-bao-quan-banh-kem-cuc-hay-ban-da-biet-chua/">TUYỆT
-                  CHIÊU BẢO QUẢN BÁNH KEM CỰC HAY BẠN ĐÃ BIẾT CHƯA?</a></h5>
+              <h5><a href="cttintuc4.html">TUYỆT CHIÊU BẢO QUẢN BÁNH KEM CỰC HAY BẠN ĐÃ BIẾT CHƯA?</a></h5>
               <p class="excerpt">Bánh kem là món đặc biệt không thể thiếu trong mỗi dịp sinh nhật, đám cưới, thôi nôi…
                 và được rất nhiều người yêu thích. Thế nhưng chúng ta thường không biết cách bảo quản bánh kem khi không
                 có tủ lạnh nên khiến chúng nhanh bị hư hoặc không để được lâu ngay cả bảo...</p>
-              <a class="view-more"
-                href="https://breadtalkvietnam.com/tuyet-chieu-bao-quan-banh-kem-cuc-hay-ban-da-biet-chua/"
-                title="Tuyệt chiêu bảo quản bánh kem cực hay bạn đã biết chưa?">
-                <i class="fa-solid fa-angle-right"></i>
-                <span>Xem chi tiết</span>
-              </a>
+              <a href="cttintuc4.html"><i class="fa-solid fa-angle-right"></i> Xem chi tiết </a>
             </div>
           </div>
         </div>
@@ -484,63 +488,49 @@
           <div class="col-md-4">
             <div class="content-box">
               <img class="img-fluid" src="assets/images/home/duong.jpg" alt="Slide 4">
-              <h5><a href="https://breadtalkvietnam.com/phan-biet-cac-loai-duong-dung-de-lam-banh/">PHÂN BIỆT CÁC LOẠI
-                  ĐƯỜNG DÙNG ĐỂ LÀM BÁNH</a></h5>
+              <h5><a href="cttintuc.html">PHÂN BIỆT CÁC LOẠI ĐƯỜNG DÙNG ĐỂ LÀM BÁNH</a></h5>
               <p class="excerpt">Hôm nay BreadTalk sẽ hướng dẫn bạn cách phân biệt các loại đường dùng để làm bánh nhé!
                 Đường là nguyên liệu tạo nên sự ngọt ngào quyến rũ cho các loại bánh ngọt, thế nên nói đến nguyên liệu
                 làm bánh không thể không nhắc tới đường. Hiện nay có rất nhiều loại đường làm...</p>
-              <a class="view-more" href="https://breadtalkvietnam.com/phan-biet-cac-loai-duong-dung-de-lam-banh/"
-                title="Phân biệt các loại đường dùng để làm bánh">
-                <i class="fa-solid fa-angle-right"></i>
-                <span>Xem chi tiết</span>
-              </a>
+              <a href="cttintuc.html"><i class="fa-solid fa-angle-right"></i> Xem chi tiết</a>
             </div>
           </div>
           <div class="col-md-4">
             <div class="content-box">
               <img class="img-fluid" src="assets/images/home/b.jpg" alt="Slide 1">
-              <h5><a href="https://breadtalkvietnam.com/nhung-loai-banh-ngot-noi-tieng-tren-the-gioi/">NHỮNG LOẠI BÁNH
-                  NGỌT NỔI TIẾNG TRÊN THẾ GIỚI</a></h5>
+              <h5><a href="cttintuc2.html">NHỮNG LOẠI BÁNH NGỌT NỔI TIẾNG TRÊN THẾ GIỚI</a></h5>
               <p class="excerpt">Những loại bánh ngọt nổi tiếng trên thế giới. Nếu là một tín đồ của bánh ngọt hay chỉ
                 đơn giản là người ưa khám phá thì chắc chắn bạn sẽ không thể nào bỏ qua cơ hội khám phá và thưởng thức
                 những chiếc bánh ngọt ngon nhất thế giới này… Những loại bánh...</p>
-              <a class="view-more" href="https://breadtalkvietnam.com/nhung-loai-banh-ngot-noi-tieng-tren-the-gioi/"
-                title="Những loại bánh ngọt nổi tiếng trên thế giới">
-                <i class="fa-solid fa-angle-right"></i>
-                <span>Xem chi tiết</span>
-              </a>
+              <a href="cttintuc2.html"><i class="fa-solid fa-angle-right"></i> Xem chi tiết</a>
             </div>
           </div>
           <div class="col-md-4">
             <div class="content-box">
               <img class="img-fluid" src="assets/images/home/a.jpg" alt="Slide 1">
-              <h5><a
-                  href="https://breadtalkvietnam.com/1-lat-banh-mi-sandwich-bao-nhieu-calo-giam-can-an-loai-sandwich-nao/">1
-                  LÁT BÁNH MÌ SANDWICH BAO NHIÊU CALO? GIẢM CÂN ĂN LOẠI SANDWICH NÀO?</a></h5>
+              <h5><a href="cttintuc3.html">1 LÁT BÁNH MÌ SANDWICH BAO NHIÊU CALO? GIẢM CÂN ĂN LOẠI SANDWICH NÀO?</a>
+              </h5>
               <p class="excerpt">Bánh mì sandwich là món ăn phổ biến được nhiều người lựa chọn trong bữa ăn sáng. Cùng
                 BreadTalk tìm hiểu 1 lát bánh mì sandwich bao nhiêu calo, ăn có béo không? Khi ăn cần lưu ý gì? Bánh mì
                 sandwich chứa nhiều carbs và tinh bột. Nhiều người thắc mắc 1 lát bánh mì sandwich...</p>
-              <a class="view-more"
-                href="https://breadtalkvietnam.com/1-lat-banh-mi-sandwich-bao-nhieu-calo-giam-can-an-loai-sandwich-nao/"
-                title="1 lát bánh mì sandwich bao nhiêu calo? Giảm cân ăn loại sandwich nào?">
-                <i class="fa-solid fa-angle-right"></i>
-                <span>Xem chi tiết</span>
-              </a>
+              <a href="cttintuc3.html">
+                <i class="fa-solid fa-angle-right"></i> Xem chi tiết </a>
             </div>
           </div>
         </div>
       </div>
-
     </div>
-    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+      <i class="fa-solid fa-chevron-left icon"></i>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+      <i class="fa-solid fa-chevron-right icon"></i>
       <span class="sr-only">Next</span>
     </a>
   </div>
+  <button class="view-all"><a href="tintuc.html">Xem tất cả</a></button>
+
   <!--footer-->
   <footer class="footer">
     <div class="container">
@@ -604,12 +594,14 @@
       <p>&copy;2024 BreadTalk, All rights reserved. Thiết kế web bởi HD Agency</p>
     </div>
   </footer>
-
-
   <script src="assets/js/bootstrap/popper.min.js"></script>
   <script src="assets/js/bootstrap/bootstrap.min.js"></script>
   <script src="assets/js/carousel/owl.carousel.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/style.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>

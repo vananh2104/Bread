@@ -97,6 +97,7 @@
     font-weight: 400;
     font-size: 34px;
     line-height: 42px;
+    padding:0px 30px;
   }
 
   .list_detail {
@@ -104,11 +105,13 @@
     font-size: 18px;
     line-height: 25px;
     color: #000;
+    padding:0px 30px;
   }
 
   .list_conent {
+      padding: 40px 0px;
       background-color: #fcf8f0;
   }
-
+  
  
   
